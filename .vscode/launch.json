@@ -1,0 +1,23 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "cobol",
+            "request": "launch",
+            "name": "COBOL (native): Launch",
+            "program": "${workspaceFolder}/<insert-program-name-here>",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": true
+        },
+        {
+            "type": "cobol",
+            "request": "attach",
+            "name": "COBOL (native): Attach to process",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
